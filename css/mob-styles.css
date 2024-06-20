@@ -100,7 +100,7 @@ body {
   height: 4px;
   background: #404bbf;
 }
-.contact {
+.contact-mobil {
   font-style: normal;
 }
 .list-contact {
@@ -123,6 +123,8 @@ body {
   color: #404bbf;
 }
 
+/* hero */
+
 .page-introduction {
   background: #2e2f42;
   margin-left: auto;
@@ -136,7 +138,7 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/fon.jpg);
+    url(../images/fon.jpg), url(../images/hero\ 2px.jpg);
 }
 .container-hero {
   display: flex;
@@ -224,7 +226,7 @@ body {
 }
 .text-advantages {
   font-size: 16px;
-  line-height: 24px;
+  padding-right: 24px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
