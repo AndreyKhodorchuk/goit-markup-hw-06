@@ -5,7 +5,7 @@
   <head>
     <title>Web Studio</title>
     <meta charset="utf-8" />
-    <meta name="description" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -45,12 +45,76 @@
             <use href="./images/icons.svg#icon-heroicons-solid_menu-1"></use>
           </svg>
         </button>
-        <div class="mobile-menu">
+        <div class="mobile-menu is-open">
           <div class="container mobile-menu-container">
-            <button class="mobile-menu-close"></button>
-            <nav class="mobile-menu-nav"></nav>
-            <address></address>
-            <div></div>
+            <button class="burger-icon-close" type="button">
+              <svg class="foto-burger-close" width="" height="">
+                <use href=""></use>
+              </svg>
+            </button>
+            <nav class="mobile-menu-nav">
+              <ul class="burger-menu">
+                <li class="burger-menu-item">
+                  <a
+                    class="burger-nav-menu burger-nav-studio"
+                    href="./index.html"
+                    >Studio</a
+                  >
+                </li>
+                <li class="burger-menu-item">
+                  <a class="burger-nav-menu" href="">Portfolio</a>
+                </li>
+                <li class="burger-menu-item">
+                  <a class="burger-nav-menu" href="">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+            <address class="burger-contact">
+              <ul class="burger-contact-list">
+                <li class="burger-contact-wire">
+                  <a class="burger-nav-contact" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="burger-contact-wire">
+                  <a class="burger-nav-contact" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <div class="icon-burger">
+              <ul class="list-burger-icon">
+                <li class="item-burger-icon">
+                  <a class="link-burger-icon" href="#">
+                    <svg class="foto-icon-burger" width="16" height="16">
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="item-burger-icon">
+                  <a class="link-burger-icon" href="#">
+                    <svg class="foto-icon-burger" width="16" height="16">
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="item-burger-icon">
+                  <a class="link-burger-icon" href="#">
+                    <svg class="foto-icon-burger" width="16" height="16">
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="item-burger-icon">
+                  <a class="link-burger-icon" href="#">
+                    <svg class="foto-icon-burger" width="16" height="16">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <!-- info contact -->
