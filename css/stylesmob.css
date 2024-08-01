@@ -41,7 +41,6 @@ img {
 /* conteiner */
 .container {
   max-width: 320px;
-  padding: 0 16px;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
@@ -52,7 +51,6 @@ img {
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
-    padding: 0 15px;
   }
 }
 /* HEDER */
@@ -83,6 +81,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-left: auto;
 }
 .logo-studio {
   color: #2e2f42;
@@ -101,7 +100,6 @@ img {
     gap: 40px;
   }
   .heder-logo {
-    padding: 24px 0;
     display: block;
     margin-right: 120px;
   }
@@ -261,11 +259,13 @@ img {
 .burger-nav-studio {
   color: #404bbf;
 }
+.burger-contact {
+  margin-bottom: 48px;
+}
 .burger-contact-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding-bottom: 48px;
 }
 .burger-nav-contact {
   font-family: "Roboto", sans-serif;
@@ -327,7 +327,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/fon.jpg), url(../images/Dark-bg.jpg);
+    url(../images/Dark-bg1px.jpg), url(../images/Dark-bg2px.jpg);
 }
 .container-hero {
   display: flex;
@@ -371,7 +371,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/fon.jpg), url(../images/Dark-bg.jpg);
+      url(../images/Dark-bg1px.jpg), url(../images/Dark-bg2px.jpg);
   }
   .container-hero {
     gap: 36px;
@@ -391,7 +391,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/fon.jpg), url(../images/Dark-bg.jpg);
+      url(../images/Dark-bg1px.jpg), url(../images/Dark-bg2px.jpg);
   }
   .container-hero {
     gap: 48px;
@@ -566,7 +566,7 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
   text-align: center;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .list-team-icon {
   display: flex;
@@ -652,7 +652,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  padding: 40px 32px;
   overflow: auto;
   background-color: #4d5ae5;
   height: 100%;
@@ -729,9 +728,9 @@ img {
   color: #f4f4fd;
   margin-bottom: 72px;
 }
-
-.page-logo {
-  margin: 0 auto;
+.footer-logo {
+  margin-left: auto;
+  margin-right: auto;
   display: inline-block;
   height: 24px;
   font-family: "Raleway", sans-serif;
@@ -743,20 +742,15 @@ img {
   text-decoration: none;
   color: #4d5ae5;
   margin-bottom: 16px;
-  margin-left: 102px;
 }
 
 .page-logo .logo-studios {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #f4f4fd;
 }
 
 .container-icon-footer {
   padding: 0 40px;
+  margin-bottom: 72px;
 }
 
 .name-icon-footer {
@@ -796,7 +790,8 @@ img {
   background-color: #31d0aa;
 }
 .text-subscribe {
-  margin-left: 122px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -805,7 +800,10 @@ img {
   max-width: 75px;
   margin-bottom: 16px;
 }
-
+.subscribe-form {
+  margin-left: auto;
+  margin-right: auto;
+}
 .subscribe-form-input {
   border: 1px solid #fff;
   border-radius: 4px;
@@ -865,7 +863,7 @@ img {
     gap: 72px 24px;
     padding-left: 108px;
   }
-  .page-logo {
+  .footer-logo {
     margin-left: 0;
     margin-bottom: 16px;
   }
@@ -971,6 +969,14 @@ img {
 .field-data {
   margin-bottom: 8px;
 }
+.icon-name {
+  fill: #2e2f42;
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .conteiner-icon-name {
   position: relative;
 }
@@ -987,14 +993,7 @@ img {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-name {
-  fill: #2e2f42;
-  position: absolute;
-  left: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .input-data:focus {
   border: 1px solid #4d5ae5;
 }
